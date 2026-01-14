@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        text-align: center;
+        padding-top: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script src = jawa.js></script> 
+
+    <h1 id = "ohWhoIsHe"></h1>
+    <p id = "myAge"></p>
+    <p id = "studentStatus"></p>
+    <p> <span id="bijiowo"></span></p>
+    <h1 id = "rating"> </h1>
+    <h1> <span id="namapanggilan"></span></h1>
+    <div>
+        <button onclick="Greetings()">Click Me!</button>
+    </div>
+    <script>
+        let a = 5;
+        let b = 10;
+        let c = a * b + b + a + 2;
+        console.log(c); 
+        let rating = 9.5;
+        let score = 80;
+        document.getElementById("ohWhoIsHe").innerHTML = name;
+        document.getElementById("myAge").innerHTML = age;
+        document.getElementById("studentStatus").innerHTML = isStudent;
+        if (rating > 9) {
+            document.getElementById("rating").innerHTML = "W Speed";
+        } else {
+            document.getElementById("rating").innerHTML = "KYS (Keep Yourself Safe)";
+        }
+        if (score >= 75) {
+            console.log("Lulus, gud");
+        } else {
+            console.log("Tidak Lulus, getgud");
+        }
+        for (let i = 1; i <= 10; i++) {
+            document.getElementById("bijiowo").innerHTML += i + " Biji Owo<br>";
+        }
+        function Greetings() {
+            document.getElementById("ohWhoIsHe").innerHTML = "Hello, " + name + "!";
+            }
+        function Greet() {
+            document.getElementById("namapanggilan").innerHTML = "Hello, " + namapanggilan + "!";
+        }
+        Greet();
+    </script>
+</body>
+</html>
